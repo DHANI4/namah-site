@@ -31,7 +31,7 @@
     background: var(--bg);
     color: var(--text);
     overflow-x: hidden;
-    cursor: default;;
+    cursor: none;
   }
 
   /* CUSTOM CURSOR */
@@ -90,7 +90,6 @@
     letter-spacing: 0.3em;
     color: var(--text);
     text-decoration: none;
-    
   }
   .nav-logo span { color: var(--red); }
   .nav-links {
@@ -216,8 +215,7 @@
 
   .hero-title {
     font-family: 'Orbitron', monospace;
-    font-size: clamp(2.5rem, 10vw, 6rem);
-    line-height: 1.1;
+    font-size: clamp(4rem, 12vw, 10rem);
     font-weight: 900;
     line-height: 0.9;
     letter-spacing: -0.02em;
@@ -369,7 +367,7 @@
   }
 
   /* SECTION COMMON */
-  section { padding: 4rem 1.5rem; }
+  section { padding: 8rem 4rem; }
 
   .section-eyebrow {
     font-family: 'Orbitron', monospace;
@@ -394,8 +392,7 @@
 
   .section-title {
     font-family: 'Orbitron', monospace;
-    font-size: clamp(1.6rem, 6vw, 3rem);
-    line-height: 1.2;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 900;
     line-height: 1.05;
     text-transform: uppercase;
@@ -985,40 +982,7 @@
     .testimonials-grid { grid-template-columns: 1fr 1fr; }
     .hype-strip { grid-template-columns: repeat(2, 1fr); }
     nav { padding: 1.2rem 2rem; }
-    @media (max-width: 640px) {
-  nav {
-    padding: 1rem 1.5rem;
-  }
-  @media (max-width: 768px) {
-  .nav-links {
-    display: none !important;   /* hide links on mobile */
-  }
-
-  nav {
-    padding: 1rem 1.2rem;
-    justify-content: space-between;
-  }
-
-  .nav-logo {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-  }
-  .nav-logo img {
-  height: 32px;
-  width: auto;
-}
-
-  .nav-cta {
-    padding: 0.5rem 1rem;
-    font-size: 0.55rem;
-  }
-}
-
-  .nav-cta {
-    padding: 0.5rem 1rem;
-    font-size: 0.55rem;
-  }
-}
+    .nav-links { display: none; }
     section { padding: 6rem 2rem; }
     footer { padding: 2rem; flex-direction: column; align-items: flex-start; }
   }
@@ -1040,7 +1004,8 @@
 
 <!-- NAV -->
 <nav>
-<img src="./logo.png" alt="NAMAH Logo">  <ul class="nav-links">
+  <a class="nav-logo" href="#hero">NAM<span>A</span>H</a>
+  <ul class="nav-links">
     <li><a href="#worlds">Worlds</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#hype">Community</a></li>
