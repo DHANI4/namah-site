@@ -397,6 +397,9 @@
     line-height: 1.05;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
+    .section-title .line {
+  display: block;
+}
   }
   .section-title .accent { color: var(--red); }
 
@@ -987,11 +990,25 @@
     footer { padding: 2rem; flex-direction: column; align-items: flex-start; }
   }
   @media (max-width: 640px) {
-   
   .section-title {
     text-align: center;
   }
+.section-title {
+  width: 100%;
+}
+.exp-grid {
+  text-align: center;
+}
 
+.exp-grid > div:first-child {
+  width: 100%;
+  margin: 0 auto;
+}
+.section-title .line {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
   .bold-line {
     display: block;
     text-align: center;
@@ -1150,8 +1167,8 @@
     <div>
       <div class="section-eyebrow reveal">The Experience</div>
       <h2 class="section-title reveal reveal-delay-1">
-  Built For the  
-  <span class="accent bold-line">Bold</span>
+  <span class="line">Built For the</span>
+  <span class="accent line">Bold</span>
 </h2>
       <p class="worlds-desc reveal reveal-delay-2">NAMAH isn't a competition you watch. It's a universe you inhabit. Every corner has been designed to push you further, connect you deeper, and make you remember exactly where you were when everything changed.</p>
       <div class="exp-stats">
