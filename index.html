@@ -31,7 +31,7 @@
     background: var(--bg);
     color: var(--text);
     overflow-x: hidden;
-    cursor: none;
+    cursor: default;;
   }
 
   /* CUSTOM CURSOR */
@@ -215,7 +215,8 @@
 
   .hero-title {
     font-family: 'Orbitron', monospace;
-    font-size: clamp(4rem, 12vw, 10rem);
+    font-size: clamp(2.5rem, 10vw, 6rem);
+    line-height: 1.1;
     font-weight: 900;
     line-height: 0.9;
     letter-spacing: -0.02em;
@@ -367,7 +368,7 @@
   }
 
   /* SECTION COMMON */
-  section { padding: 8rem 4rem; }
+  section { padding: 6rem 1.5rem; }
 
   .section-eyebrow {
     font-family: 'Orbitron', monospace;
@@ -392,7 +393,8 @@
 
   .section-title {
     font-family: 'Orbitron', monospace;
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(1.6rem, 6vw, 3rem);
+    line-height: 1.2;
     font-weight: 900;
     line-height: 1.05;
     text-transform: uppercase;
@@ -982,7 +984,20 @@
     .testimonials-grid { grid-template-columns: 1fr 1fr; }
     .hype-strip { grid-template-columns: repeat(2, 1fr); }
     nav { padding: 1.2rem 2rem; }
-    .nav-links { display: none; }
+    @media (max-width: 640px) {
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-cta {
+    padding: 0.5rem 1rem;
+    font-size: 0.55rem;
+  }
+}
     section { padding: 6rem 2rem; }
     footer { padding: 2rem; flex-direction: column; align-items: flex-start; }
   }
